@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_61ea952393e117c8b30e5d4188e8afc5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_61ea952393e117c8b30e5d4188e8afc5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_61ea952393e117c8b30e5d4188e8afc5 = L.map(
+                "map_61ea952393e117c8b30e5d4188e8afc5",
+                {
+                    center: [42.4476, -76.48],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_771bc61656bb9517663441f6491eca21 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_771bc61656bb9517663441f6491eca21.addTo(map_61ea952393e117c8b30e5d4188e8afc5);
+        
+    
+            var marker_a4f8c954ca7b1bc6f770ce085cdba9b1 = L.marker(
+                [42.4532, -76.4784],
+                {
+}
+            ).addTo(map_61ea952393e117c8b30e5d4188e8afc5);
+        
+    
+            var icon_9e9da7c30e497f87ea49ef1c75b86650 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "box",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7fe300564eb3dc66f159be659885839 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7c8f66edf8f96458e291b9b610932345 = $(`<div id="html_7c8f66edf8f96458e291b9b610932345" style="width: 100.0%; height: 100.0%;"><b>Order:</b> BRS-001<br><b>Items:</b> 12 boxes</div>`)[0];
+                popup_c7fe300564eb3dc66f159be659885839.setContent(html_7c8f66edf8f96458e291b9b610932345);
+            
+        
+
+        marker_a4f8c954ca7b1bc6f770ce085cdba9b1.bindPopup(popup_c7fe300564eb3dc66f159be659885839)
+        ;
+
+        
+    
+    
+            marker_a4f8c954ca7b1bc6f770ce085cdba9b1.bindTooltip(
+                `<div>
+                     Click for North Campus (Dickson) info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4f8c954ca7b1bc6f770ce085cdba9b1.setIcon(icon_9e9da7c30e497f87ea49ef1c75b86650);
+            
+    
+            var marker_703118df246f300cfd83674d1637ebdd = L.marker(
+                [42.4473, -76.488],
+                {
+}
+            ).addTo(map_61ea952393e117c8b30e5d4188e8afc5);
+        
+    
+            var icon_e2f5a4568eb361b995ab2efa5e12241d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "box",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7985181dd80df821597de88b927f6067 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3822277604dac601ef95dcd06533a987 = $(`<div id="html_3822277604dac601ef95dcd06533a987" style="width: 100.0%; height: 100.0%;"><b>Order:</b> BRS-002<br><b>Items:</b> 5 boxes</div>`)[0];
+                popup_7985181dd80df821597de88b927f6067.setContent(html_3822277604dac601ef95dcd06533a987);
+            
+        
+
+        marker_703118df246f300cfd83674d1637ebdd.bindPopup(popup_7985181dd80df821597de88b927f6067)
+        ;
+
+        
+    
+    
+            marker_703118df246f300cfd83674d1637ebdd.bindTooltip(
+                `<div>
+                     Click for West Campus (Becker) info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_703118df246f300cfd83674d1637ebdd.setIcon(icon_e2f5a4568eb361b995ab2efa5e12241d);
+            
+    
+            var marker_531c9f06592c4df6fae1e1c53bec0d03 = L.marker(
+                [42.4418, -76.4842],
+                {
+}
+            ).addTo(map_61ea952393e117c8b30e5d4188e8afc5);
+        
+    
+            var icon_7ea2a5bcdd79e877f511fa66411dc014 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "box",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b5c653cd1c6c089c39d531f06e83072 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b57469346aeb5ee557150c1a91673e36 = $(`<div id="html_b57469346aeb5ee557150c1a91673e36" style="width: 100.0%; height: 100.0%;"><b>Order:</b> BRS-003<br><b>Items:</b> 8 boxes</div>`)[0];
+                popup_5b5c653cd1c6c089c39d531f06e83072.setContent(html_b57469346aeb5ee557150c1a91673e36);
+            
+        
+
+        marker_531c9f06592c4df6fae1e1c53bec0d03.bindPopup(popup_5b5c653cd1c6c089c39d531f06e83072)
+        ;
+
+        
+    
+    
+            marker_531c9f06592c4df6fae1e1c53bec0d03.bindTooltip(
+                `<div>
+                     Click for Collegetown info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_531c9f06592c4df6fae1e1c53bec0d03.setIcon(icon_7ea2a5bcdd79e877f511fa66411dc014);
+            
+    
+            var marker_5f9a2265785517b94a2efa006ffa1797 = L.marker(
+                [42.4442, -76.482],
+                {
+}
+            ).addTo(map_61ea952393e117c8b30e5d4188e8afc5);
+        
+    
+            var icon_949521799d27f4283b413607dcb03b88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "box",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_573fa8bde95221037eb171cc548ee92e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a0e9dc5359ec662a5021b8423bdcacbf = $(`<div id="html_a0e9dc5359ec662a5021b8423bdcacbf" style="width: 100.0%; height: 100.0%;"><b>Order:</b> BRS-004<br><b>Items:</b> 2 boxes</div>`)[0];
+                popup_573fa8bde95221037eb171cc548ee92e.setContent(html_a0e9dc5359ec662a5021b8423bdcacbf);
+            
+        
+
+        marker_5f9a2265785517b94a2efa006ffa1797.bindPopup(popup_573fa8bde95221037eb171cc548ee92e)
+        ;
+
+        
+    
+    
+            marker_5f9a2265785517b94a2efa006ffa1797.bindTooltip(
+                `<div>
+                     Click for Engineering Quad info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f9a2265785517b94a2efa006ffa1797.setIcon(icon_949521799d27f4283b413607dcb03b88);
+            
+    
+            var marker_cf1a97cf4a3059b58704c0fc5c22a556 = L.marker(
+                [42.4447, -76.476],
+                {
+}
+            ).addTo(map_61ea952393e117c8b30e5d4188e8afc5);
+        
+    
+            var icon_f159a3352cbc9fdb4cdd2970734515e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "box",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_598365849c9c761d04bbd3f997d1a015 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0b14881d84f481a2d02f6ec6f2c9f876 = $(`<div id="html_0b14881d84f481a2d02f6ec6f2c9f876" style="width: 100.0%; height: 100.0%;"><b>Order:</b> BRS-005<br><b>Items:</b> 15 boxes</div>`)[0];
+                popup_598365849c9c761d04bbd3f997d1a015.setContent(html_0b14881d84f481a2d02f6ec6f2c9f876);
+            
+        
+
+        marker_cf1a97cf4a3059b58704c0fc5c22a556.bindPopup(popup_598365849c9c761d04bbd3f997d1a015)
+        ;
+
+        
+    
+    
+            marker_cf1a97cf4a3059b58704c0fc5c22a556.bindTooltip(
+                `<div>
+                     Click for Schoellkopf Field info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf1a97cf4a3059b58704c0fc5c22a556.setIcon(icon_f159a3352cbc9fdb4cdd2970734515e2);
+            
+</script>
+</html>
