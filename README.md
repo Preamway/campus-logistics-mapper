@@ -11,7 +11,7 @@ I built this Python project to programmatically visualize university-wide shippi
 - **Folium / Leaflet.js:** Geospatial visualization and interactive mapping
 
 ## 🚀 View the Live Map
-*(We will add a link here in Step 4!)*
+*http://preamway.github.io/campus-logistics-mapper*
 
 ## 💡 Real-World Application
 In a high-volume logistics environment, visualizing order density allows for smarter dispatching of student labor, saving time and reducing transportation costs across a large, hilly campus like Cornell.
